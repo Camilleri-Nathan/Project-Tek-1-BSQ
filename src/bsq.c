@@ -25,7 +25,8 @@ char	**create_map(char *buffer, int height, int width)
 	map[count] = NULL;
 	count = my_strlen_line(buffer);
 	while(i < height) {
-		my_strcpy(map[i], buffer, &count);
+		if (my_strcpy(map[i], buffer, &count) == 84)
+			return (NULL);
 		i++;
 	}
 	return (map);

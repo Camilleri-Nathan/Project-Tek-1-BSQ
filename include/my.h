@@ -39,6 +39,6 @@ void	find_the_tallest_number_3(char **map, coordinates_t *coord);
 int	my_getnbr(char *str);
 void	my_getnbr_2(char *str);
 int	my_strlen_line(char *str);
-char	*my_strcpy(char *dest, char *src, int *coordinate_x);
+int	my_strcpy(char *dest, char *src, int *coordinate_x);
 
 #endif
