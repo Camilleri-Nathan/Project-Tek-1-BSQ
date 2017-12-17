@@ -32,8 +32,13 @@ LIBPOOL		=	libpool.a
 
 NAME		=	bsq
 
-SRCS		=	main.c 			\
-			open_and_read_files.c
+SRCS		=	algoritm.c 	\
+			bsq.c		\
+			find_tallest_number.c \
+			get_width.c		\
+			my_getnbr.c		\
+			my_line_strlen.c	\
+			my_strcpy.c
 
 DEBUG		=	no
 
