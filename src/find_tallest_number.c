@@ -35,11 +35,9 @@ coordinates_t	*find_the_tallest_number_2_1(char **map)
 	coord->x = -1;
 	coord->y = -1;
 	coord->size = -1;
-	while (map[coordinate_y] != NULL)
-	{
+	while (map[coordinate_y] != NULL) {
 		coordinate_x = 0;
-		while (map[coordinate_y][coordinate_x] != '\0')
-		{
+		while (map[coordinate_y][coordinate_x] != '\0') {
 			find_the_tallest_number_2_2_1(map,
 				coordinate_x, coordinate_y, coord);
 			coordinate_x++;
@@ -65,7 +63,8 @@ void	find_the_tallest_number_2_2_1(char **map, int coordinate_x,
 		find_the_tallest_number_2_2_2(map, coord, coordinate_x, coordinate_y);
 }
 
-void	find_the_tallest_number_2_2_2(char **map, coordinates_t *coord, int x, int y)
+void	find_the_tallest_number_2_2_2(char **map, coordinates_t *coord, int x,
+										int y)
 {
 	coord->size = map[y][x] - 48;
 	coord->x = x;

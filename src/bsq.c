@@ -12,7 +12,7 @@ char	**create_map(char *buffer, int height, int width)
 	char	**map;
 	int	count = 0;
 	int	i = 0;
-	
+
 	map = malloc(sizeof(char *) * (height + 1));
 	if (map == NULL)
 		return (NULL);
@@ -36,7 +36,7 @@ void	print_board(char **map)
 {
 	int	x = 0;
 	int	y = 0;
-	
+
 	while (map[y] != NULL)
 	{
 		x = 0;
@@ -64,7 +64,7 @@ int	bsq(char *buffer)
 
 	map = create_map(buffer, height, width);
 	if (map == NULL)
-		return (84);	
+		return (84);
 	algo(map);
 	if (map[1] != NULL)
 	{
